@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar {
+  overflow: hidden;
+  background-color: #333;
+}
+.slide{
+  display: none;
+  width: 100%;
+  height: 95%;
+}
+.nav-bar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-bar a.active {
+  background-color: #16F1D4;
+  color: white;
+}
+
+.nav-bar .icon {
+  display: none;
+}
+
+.fa-navicon::before, .fa-reorder::before, .fa-bars::before {
+  content: "";
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 97vh;
+  /* margin: 0 auto; */
+}
+
+.container .slide-caption{
+  position: relative;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  margin-top: -92.3vh;
+  height: 92.2vh;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* fade in animation */
+#welcome{
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+/* About css*/
+.content{
+  /* background-color: rgba(161, 233, 240, 0.39); */
+  color: black;
+  padding: 20px;    
+}
+.content p{
+  padding: 2.5%;
+}
+.about-container{
+  margin-top: -34px;
+  padding: 10%;
+}
+
+/* About css*/
+.search-box{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #2f3640;
+  /* height: 40px; */
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-btn{
+  color: #e84118;
+  float: right;
+  text-decoration: none;
+  margin-top: -28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  background-color: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  color: white;
+  font-size: 16px;
+  /* transition: 0.4s;
+  line-height: 40px; */
+  width: 800px;
+}
+/* Footer css*/
+.app-footer{
+  display: inline-flex;
+  padding: 10px;
+  background-color: #333;
+  color: #ddd;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px){
+  .search-input{
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .search-input{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .search-input{
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .search-input{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar a{
+    display: none;
+  }
+  .nav-bar a.icon {
+    float: right;
+    display: block;
+  }
+  .container{
+    height: 75vh;
+  }
+  .container .slide-caption{
+    margin-top: -71.3vh;
+    height: 71.5vh;
+  }
+  .about-container{
+    margin-top: -27px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar.responsive {
+    position: relative;
+    transition-delay: 5ms;
+  }
+  .nav-bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-bar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* .container .slide{
+  position: relative;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.container .content p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+} */
+
+/* .container .content {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  background: rgb(0, 0, 0); Fallback color
+  background: rgba(0, 0, 0, 0.5); Black background with 0.5 opacity
+  color: #f1f1f1;
+  width: 97%;
+  padding: 20px;
+} */

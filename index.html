@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>Main Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/our_team.css">
+        <link rel="stylesheet" type="text/css" href="css/contact_us.css">
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $("#welcome").fadeIn(3000);
+            });
+            // document.getElementById()
+            // $(".nav-bar a").click(function(event) {
+            //     console.log("Hello");
+            //     // event.preventDefault();
+
+            //     // $('html, body').animate({
+            //     //     scrollTop: $("#elementtoScrollToID").offset().top
+            //     // }, 2000);
+            // });
+        </script>
+        <div class="nav-bar" id="myTopnav">
+            <a></a>
+            <a href="#contact">Contact</a>
+            <a href="#our_team">Our Team</a>
+            <a href="#about">About</a>
+            <a href="#home" class="active">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="material-icons">menu</i>
+            </a>
+        </div>  
+        <div id="home">
+            <div class="container">
+                <div class="slide-figure">
+                    <img class="slide" src="images/slide1.jpg">
+                    <img class="slide" src="images/slide2.jpg">
+                    <img class="slide" src="images/slide3.jpg">
+                    <figcaption class="slide-caption">
+                        <div class="search-box" style="height: 45px">
+                            <input class="search-input" type="text" style="margin-left: 15px;margin-top: 2px" placeholder="Search By City Name">
+                            <a class="search-btn" href="#">
+                                <i class="material-icons">search</i>
+                            </a>
+                        </div>
+                        <p id="welcome" style="position: absolute;top: 60%;left: 50%;transform: translate(-50%,-50%);font-size: 55px">Welcome</p>
+                    </figcaption>
+                </div>
+                <hr>    
+            </div>
+        </div>  
+        <div id="about" class="about-container">
+            <div class="content">
+                <h1 style="margin-bottom: 4%;">
+                    <center><u><i>About</i></u></center>
+                </h1>
+                <p>
+                    HTML tables were created to provide a straightforward way to mark up structured tabular data and to display that data in a form that is easy for users to read and digest.
+                </p>
+                <p>
+                    When HTML was being developed, however, CSS was not widely supported in browsers, so tables were the primary means by which websites were built. They were used for positioning content as well as for building the overall layout of a page. This worked at the time, but it was not what table markup was intended for, and it led to many other associated problems.             
+                </p>
+                <p>
+                    Fortunately, we have come a long way since then. Today tables are used specifically for organizing data (like they should be), and CSS is free to get on with the jobs of positioning and layout.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="our_team" class="our_team">
+            <h1>
+                <center><u><i>Our Team</i></u></center>
+            </h1>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="images/me.JPG" class="images" alt="Akshaykumar Deekonda" style="width:100%; height: 265px;">
+                        <div class="card_container">
+                            <h2>Akshaykumar Deekonda</h2>
+                            <p class="title">CEO & Founder</p>
+                            <p>Master in Data Science</p>
+                            <p>akshay@gmail.com</p>
+                            <div class="row" style="margin-left: 10%">
+                                <a href="#"><img src="images/instagram.png" class="insta" style="width: 30px;"></a>
+                                <a href="#"><img src="images/facebook.png" style="width: 30px;margin-left: 20%"></a>
+                                <a href="#"><img src="images/twitter.png" style="width: 30px;margin-left: 20%"></a>
+                            </div>
+                            <!-- <p><button class="button">Contact</button></p> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                        <img src="images/mehul.jpg" class="images" alt="mehul gupta" style="width:100%; height: 265px;">
+                        <div class="card_container">
+                            <h2>Mehul Gupta</h2>
+                            <p class="title">Board Director</p>
+                            <p>Master in AI</p>
+                            <p>mehulgupta@gmail.com</p>
+                            <div class="row" style="margin-left: 10%">
+                                <a href="#"><img src="images/instagram.png" class="insta" style="width: 30px;"></a>
+                                <a href="#"><img src="images/facebook.png" style="width: 30px;margin-left: 20%"></a>
+                                <a href="#"><img src="images/twitter.png" style="width: 30px;margin-left: 20%"></a>
+                            </div>
+                            <!-- <p><button class="button">Contact</button></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                    <img src="images/gaurav.JPG" class="images" alt="gaurav kale" style="width:100%;height: 265px;">
+                    <div class="card_container">
+                        <h2>Gaurav Kale</h2>
+                        <p class="title">Designer</p>
+                        <p>Masters in Web Technology</p>
+                        <p>gaurav.kale@gmail.com</p>
+                        <div class="row" align="center">
+                            <a href="#"><img src="images/instagram.png" class="insta" style="width: 30px;margin-left: 5%;"></a>
+                            <a href="#"><img src="images/facebook.png" style="width: 30px;margin-left: 20%"></a>
+                            <a href="#"><img src="images/twitter.png" style="width: 30px;margin-left: 20%"></a>
+                        </div>
+                        <!-- <p><button class="button">Contact</button></p> -->
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <section class="section2"> 
+                <div class="contactform">
+                <h5>Contact Form</h5>
+                    <form action="#">
+                        <label for="firstname">
+                            <i class="cntfrmicn fa fa-users material-icons">account_circle</i>
+                            <input name="firstname" class="form-fields" type="text">
+                        </label>
+                        <label for="email">
+                            <i class="cntfrmicn fa fa-envelope material-icons">email</i>
+                            <input name="email" class="form-fields" type="text">
+                        </label>
+                        <label for="contact">
+                            <i class="cntfrmicn fa fa-phone material-icons">phone</i>
+                            <input name="contact" class="form-fields" type="text">
+                        </label>
+                        <label for="textarea">
+                            <i class="cntfrmicn fa fa-comment material-icons">comment</i>
+                            <textarea class="form-fields" name="textarea" id="" cols="30" rows="10"></textarea>
+                        </label>
+                        <button class="form-fields button" value="Send" type="submit">Send <i class="fa fa-paper-plane material-icons">send</i></button>
+                    </form>
+                </div>
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="contmap">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                var setting = {"height":512,"width":1500,"zoom":4,"queryString":"India","place_id":"ChIJkbeSa_BfYzARphNChaFPjNc","satellite":false,"centerCoord":[21.715551619331528,82.75252935000003],"cid":"0xd78c4fa1854213a6","cityUrl":"/india","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"60399"};
+                var d = document;
+                var s = d.createElement('script');
+                s.src = 'https://1map.com/js/script-for-user.js?embed_id=60399';
+                s.async = true;
+                s.onload = function (e) {
+                    window.OneMap.initMap(setting)
+                };
+                var to = d.getElementsByTagName('script')[0];
+                to.parentNode.insertBefore(s, to);
+                })();</script><a href="https://1map.com/map-embed?embed_id=60399">1map.com</a></div>
+            </section>
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "nav-bar") {
+                x.className += " responsive";
+                } else {
+                x.className = "nav-bar";
+                }
+            }
+        </script>
+    </body>
+    <footer class="app-footer">
+        <div>
+            <a>Hall's</a>
+            <span>&copy; 2019</span>
+        </div>
+        <!-- <span>Powered by</span>
+        <a href="#">Hall's</a> -->
+        <div class="ml-auto">&nbsp;
+            <span>Powered by</span>
+            <a href="#">Hall's</a>
+        </div>
+    </footer>
+</html>

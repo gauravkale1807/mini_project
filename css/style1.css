@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #5d4954;
+    display: flex;
+    /* min-height: 8vh; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+.nav-list{
+    /* display: flex; */
+    width: 35%;
+}
+.nav-list li{
+    float: right;
+}
+.nav-list a{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 28px;
+}
