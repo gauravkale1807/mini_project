@@ -1,0 +1,155 @@
+<!Doctype html>
+<head><title>New form</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+   box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+}
+.container{
+    border:1px solid gray;
+    max-width:60.55%;  
+    margin:auto;
+    padding:4%;
+    font-size:18px;
+    font-weight:bold;
+    background:#595959;
+}
+.header{
+  background-color:yellow;
+  text-align:center;
+  max-width:60.55%;
+	color:black;
+	margin:auto;
+	border:1px solid gray;
+}
+.header h2{
+	margin:0;	
+	padding:15px;
+}
+#sub{
+  width:100%;
+  border-radius:15px;
+  border:1px solid #7ac9b7;
+  background:green;
+  color:aliceblue;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:30px;
+  padding:10px;
+}
+.input_data{
+  margin-bottom:2%;
+  margin-top:2%;
+  width:100%;
+  padding:15px;
+  border-radius:5px;
+  border:1px solid #7ac9b7;
+  font-size:18px;
+ }
+
+#ph{
+  margin-top:1%;
+  width:20%;
+  padding:15px;
+  border-radius:5px;
+  border:1px solid #7ac9b7;
+  font-size:18px;
+}
+#mobile_number{
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 79%;
+  margin-bottom: 1%;
+}
+
+#ep{
+  font-size: 18px;
+  color: red;
+}
+.animate{
+  -webkit-animation:
+animatezoom 0.6s;
+  animation:animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom{
+      from{ -website-transform:
+scale(0)}
+  to{-website-transform:
+ scale(1)}
+}
+ @keyframes animatezoom{
+   from{transform:scale(0)}
+   to{transform:scale(1)}
+}
+@media screen and (max-width: 870px){
+  #ph{
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #mobile_number{
+    width: 65%;
+    padding: 10px;
+  }
+} 
+@media screen and (max-width: 600px){
+  .container{
+    max-width: 85%;
+  }
+  .header{
+    max-width: 85%;
+  }
+  #ep{
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+<script>
+  function validation(){
+     var Firstname=document.getElementById("firstname").value;
+     var Lastname=document.getElementById("lastname").value;
+     var Address=document.getElementById("address").value;
+     var email_id=document.getElementById("email").value;
+     if(Firstname==""||Lastname==""||Address==""||email_id=="")
+     {
+       document.getElementById("ep").innerHTML="ALL FIELD REQUIRED";
+       return false;
+     }else{
+       return true;
+     }  
+   }
+ </script>	 
+<body>
+  <div class="header">
+    <h1>Booking form<h1>
+  </div>
+  <div class="container">
+    <form action='Responsive_form.html' method="post" onsubmit="return validation()">
+     <label>First name</label>&nbsp;<span id="ep"></span>
+     <input type="text" name="firstname" class="input_data" id="firstname" placeholder="First name">
+     <label>Last name</label>&nbsp;<span id="ep"></span>
+     <input type="text" name="lastname" class="input_data" id="lastname" placeholder="Last name">
+     <label>Email Id</label>&nbsp;<span id="ep"></span>
+     <input type="text" name="email" class="input_data" id="email" placeholder="Email Address">
+     <label>Address</label>&nbsp;<span id="ep"></span>
+     <input type="text" name="address" class="input_data" id="address" placeholder="Address">
+     <lable> Mobile Number:</lable><br>
+			<select id="ph">
+				<option>+91</option>
+				<option>+92</option>
+				<option>+93</option>
+				<option>+94</option>
+				<option>+95</option>
+      </select>
+      <input type="number" name="mobile number" id="mobile_number" placeholder="your number">
+      <input type="submit" value="Submit" id="sub">
+  </form>
+ </div>  
+</body>
+</html>
